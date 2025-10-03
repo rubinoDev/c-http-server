@@ -27,28 +27,36 @@ A minimal HTTP server written in C for educational purposes. This project demons
 
 ```bash
 gcc -o simple_http_server main.c
+```
 Or if you have multiple source files:
 
+```
 bash
-Copy code
 gcc -o simple_http_server src/*.c
+```
 Run
+
+```
 bash
-Copy code
 ./simple_http_server <port> <root_directory>
+```
 Example:
 
+```
 bash
-Copy code
 ./simple_http_server 8080 ./www
+```
+
 This will start the server on port 8080 and serve files from the www folder.
 
 Usage
 Open a browser or use curl to test:
 
+```
 bash
-Copy code
 curl http://localhost:8080/index.html
+```
+
 Access / → serves index.html
 
 Access /image.jpg → serves image.jpg from the root directory
