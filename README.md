@@ -63,17 +63,6 @@ Access /image.jpg → serves image.jpg from the root directory
 
 Requests to files outside root (path traversal) will return 403 Forbidden
 
-Project Structure
-makefile
-Copy code
-project/
-│
-├─ src/       # C source files
-├─ include/   # Header files
-├─ build/     # Compiled files (ignored in Git)
-├─ www/       # Root directory with static files
-├─ .gitignore
-└─ README.md
 Notes
 This is a learning project. It does not implement full HTTP/1.1 features, SSL/TLS, or advanced request handling.
 
